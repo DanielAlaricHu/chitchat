@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# Chit-Chat
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Chit-Chat is a real-time chat application built with React, FastAPI, and hosted on Firebase Hosting (frontend) and Google Cloud Run (backend). It supports WebSocket-based messaging for real-time communication and integrates with Firebase Authentication for user management.
 
-## Available Scripts
+## Live Demo
+The project can be tested at:  
+[https://chitchat-ce06a.web.app](https://chitchat-ce06a.web.app)
 
-In the project directory, you can run:
+## Features
+- **Real-time messaging** using WebSockets
+- **Google login** via Firebase Authentication
+- **Chatroom** creation and joining
+- **Responsive UI** for desktop and mobile
+- Frontend hosted on **Firebase Hosting**
+- Backend hosted on **Google Cloud Run**
+- MySQL database hosted on **Google Cloud SQL**
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Frontend
+- React with TypeScript
+- Material UI (MUI)
+- Tailwind CSS (optional for utility classes)
+- Firebase Authentication
+- Firebase Hosting
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Backend
+- FastAPI (Python)
+- WebSockets
+- REST APIs
+- Firebase Admin SDK
+- Google Cloud Run
+- MySQL (Google Cloud SQL)
 
-### `npm test`
+## Usage
+1. Visit the frontend (Firebase Hosting)
+2. Log in with Google
+3. Create a chatroom by clicking "New Chat" (Search by complete email address of another existing user)
+4. Start messaging in real time
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Known Limitations
+- New chatrooms may not appear until refresh
+- WebSocket connection has a timeout of 3600s on Cloud Run
 
-### `npm run build`
+## Future Improvements
+- Typing indicators
+- Read receipts
+- Push notifications
+- Pagination
+- Real-time chatroom list updates
+- Search and sorting
+- Contact management
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+This project is licensed under the MIT License.
